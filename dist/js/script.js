@@ -23,7 +23,7 @@ window.onscroll = function () {
         miniMenu.classList.remove('mini-menu');
         tombolmini.classList.remove('mini-tombol');
     }
-    myFunction()
+    // myFunction()
 };
 
 

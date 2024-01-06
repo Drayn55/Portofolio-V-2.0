@@ -113,94 +113,83 @@
                     </div>
                 </div>
             </label>
-
+        </div>
+        </header>
+        <div class="flex justify-end absolute bottom-0 top-0 left-0 right-0 items-end px-5 pb-10">
             <a href="#home"
-                class="w-11 h-11 rounded-full hidden bg-slate-100 shadow-lg ring-1 animate-bounce ring-slate-500 justify-center absolute top-[450px] left-[80%] items-center hover:border-dark hover:bg-dark text-dark hover:text-white transition duration-300 ease-in-out lg:left-[92%] lg:top-[500px]"
-                id="tombol-mini">
+            class="w-11 h-11 opacity-0 rounded-full flex bg-slate-100 shadow-lg ring-1 animate-bounce ring-slate-500 justify-center items-center hover:border-dark hover:bg-dark text-dark hover:text-white transition duration-300 ease-in-out lg:left-[92%] lg:top-[500px] z-[999]"
+            id="tombol-mini">
+            <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                class="bi bi-chevron-up fill-current" viewBox="0 0 16 16">
+                <path fill-rule="evenodd"
+                    d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+            </svg>
+        </a>
+    </div>
+    <!-- Header end -->
+    
+    <div class="flex justify-center bg-transparent absolute bottom-0 top-0 left-0 right-0 items-end">
+        <div class="flex items-center justify-evenly lg:hidden lg:justify-start absolute bg-white dark:bg-dark py-2 px-2 rounded-3xl w-72 shadow-md bottom-0 border-solid border-2 border-slate-500 z-50 opacity-0"
+            id="mini-menu">
+            <!-- about start-->
+            <a href="#about"
+                class="w-9 h-9 rounded-full flex justify-center items-center hover:border-dark hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
                 <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-chevron-up fill-current" viewBox="0 0 16 16">
-                    <path fill-rule="evenodd"
-                        d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
+                    class="bi bi-file-person fill-current" viewBox="0 0 16 16">
+                    <path
+                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
                 </svg>
             </a>
-            <div class="flex items-center justify-evenly lg:hidden lg:justify-start absolute bg-white dark:bg-dark py-2 px-1 rounded-3xl w-72 top-[700px] shadow-md border-solid border-2 border-slate-500"
-                id="mini-menu">
-                <!-- about start-->
-                <a href="#about"
-                    class="w-9 h-9 rounded-full flex justify-center items-center hover:border-dark hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-file-person fill-current" viewBox="0 0 16 16">
-                        <path
-                            d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                        <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                    </svg>
-                </a>
-                <!--about end  -->
-                <!-- pengalaman start-->
-                <a href="#pengalaman"
-                    class="w-9 h-9 rounded-full flex justify-center items-center hover:border-green hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-person fill-current" viewBox="0 0 16 16">
-                        <path
-                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                    </svg>
-                </a>
-                <!--pengalaman end  -->
-                <!-- document start-->
-                <a href="#documentation"
-                    class="w-9 h-9 rounded-full flex justify-center items-center hover:border-blue-500 hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-files fill-current" viewBox="0 0 16 16">
-                        <path
-                            d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
-                    </svg>
-                </a>
-                <div
-                    class="w-9 h-9 rounded-full flex justify-center items-center hover:border-blue-500 hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out group">
-                    <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-archive" viewBox="0 0 16 16">
-                        <path
-                            d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
-                    </svg>
-                    <div id="dropdownHover"
-                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 group-hover:block absolute bottom-11 ">
-                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
-                            <li>
-                                <a href="#webDesain"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                                    Desain</a>
-                            </li>
-                            <li>
-                                <a href="#botTelegram"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bot
-                                    Telegram</a>
-                            </li>
-                            <li>
-                                <a href="#animasi"
-                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Animasi</a>
-                            </li>
-                            <!-- <li>
-                                    <a href="#"
-                                        class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Sign
-                                        out</a>
-                                </li> -->
-                        </ul>
+            <!--about end  -->
+            <!-- pengalaman start-->
+            <a href="#pengalaman"
+                class="w-9 h-9 rounded-full flex justify-center items-center hover:border-green hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-person fill-current"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                        </svg>
+                        </a>
+                        <!--pengalaman end  -->
+                        <!-- document start-->
+                        <a href="#documentation"
+                            class="w-9 h-9 rounded-full flex justify-center items-center hover:border-blue-500 hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
+                        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-files fill-current"
+                            viewBox="0 0 16 16">
+                            <path
+                                d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                        </svg>
+                        </a>
+                        <div
+                            class="w-9 h-9 rounded-full flex justify-center items-center hover:border-blue-500 hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out group">
+                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive"
+                    viewBox="0 0 16 16">
+                    <path
+                        d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                </svg>
+                <div id="dropdownHover"
+                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 group-hover:block absolute bottom-11 ">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+                        <li>
+                            <a href="#webDesain"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                Desain</a>
+                        </li>
+                        <li>
+                            <a href="#botTelegram"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bot
+                                Telegram</a>
+                        </li>
+                        <li>
+                            <a href="#animasi"
+                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Animasi</a>
+                        </li>
+                    </ul>
                     </div>
-                </div>
-                <!--document end  -->
-                <!-- other start-->
-                <!-- <a href="#" target="_blank"
-                    class="w-9 h-9 rounded-full flex justify-center items-center hover:border-slate-950 hover:bg-dark hover:text-white transition duration-300 ease-in-out"
-                    data-dropdown-toggle="dropdownHover" data-dropdown-trigger="hover">
-
-                </a> -->
-                <!--other end  -->
-
-            </div>
+                    </div>
         </div>
-    </header>
-    <!-- Header end -->
-
+        </div>
 
     <!-- Hero Section Start -->
     <section id="home" class="pt-9 dark:bg-slate-950">
@@ -227,7 +216,7 @@
 
                 <div class="w-full self-end px-4 lg:w-1/2 animate-slideLeft">
                     <div class="relative mt-10 lg:mt-9 lg:right-0 ">
-                        <img src="/dist/img/logo-1.png" alt="" class="max-w-60 mx-auto lg:w-80">
+                        <img src="dist/img/logo-1.png" alt="" class="max-w-60 mx-auto lg:w-80">
                         <span
                             class="w-96 absolute -bottom-12 -z-10 left-1/2 -translate-x-1/2 md:scale-100 lg:scale-110"><svg
                                 viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
@@ -601,7 +590,7 @@
             <div class="mb-12 px-4 lg:w-1/2 lg:mx-auto animate-opacity">
                 <a href="https://drive.google.com/folderview?id=1EtwbzazYZP2Mm-Jw4C_A_o3q44rCtR7n" target="_blank"
                     class="rounded-md shadow-md overflow-hidden block">
-                    <img src="/dist/img/animasi-kirara.jpg" alt="" width="100%">
+                    <img src="dist/img/animasi-kirara.jpg" alt="" width="100%">
                 </a>
             </div>
 
@@ -621,7 +610,7 @@
             <div class="mb-5 px-4 lg:w-1/2 lg:mx-auto animate-slideBottom">
                 <a href="https://drive.google.com/folderview?id=1EtwbzazYZP2Mm-Jw4C_A_o3q44rCtR7n" target="_blank"
                     class="rounded-md shadow-md overflow-hidden block">
-                    <img src="/dist/img/fight-hutao-adn-xiao.jpg" alt="" width="100%">
+                    <img src="dist/img/fight-hutao-adn-xiao.jpg" alt="" width="100%">
                 </a>
                 <p class="font-medium text-base text-secon mt-7 text-center dark:text-slate-400">Ini hanya perwakilan
                     salah satu
