@@ -21,14 +21,14 @@ body {
 }
 
 .mini-menu {
-    @apply fixed z-[999] bg-white opacity-100;
-    backdrop-filter: blur(5px);
-    border: 1px 1px black;
+    @apply opacity-100;
+    /* backdrop-filter: blur(5px); */
+    /* border: 1px 1px black; */
     /* top: 500px; */
 }
 
 .mini-tombol {
-    @apply fixed bg-white opacity-100;
+    @apply opacity-100;
     /* display: flex */
 }
 

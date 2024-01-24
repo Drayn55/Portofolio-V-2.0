@@ -125,9 +125,8 @@
     </header>
 
     <!-- mini button start -->
-    <div class="flex justify-end absolute bg-transparent items-end pb-20 px-2 w-[100%] h-screen lg:pb-2">
         <a href="#home"
-            class="w-11 h-11 opacity-0 rounded-full flex bg-slate-100 shadow-lg ring-1 animate-bounce ring-slate-500 justify-center items-center hover:border-dark hover:bg-dark text-dark hover:text-white transition duration-300 ease-in-out lg:left-[92%] lg:top-[500px] z-[999]"
+            class="w-11 fixed bottom-12 right-5 h-11 opacity-0 rounded-full flex bg-slate-100 shadow-lg ring-1 z-50 animate-bounce ring-slate-500 justify-center items-center hover:border-dark hover:bg-dark text-dark hover:text-white transition duration-300 ease-in-out"
             id="tombol-mini">
             <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
                 class="bi bi-chevron-up fill-current" viewBox="0 0 16 16">
@@ -135,74 +134,73 @@
                     d="M7.646 4.646a.5.5 0 0 1 .708 0l6 6a.5.5 0 0 1-.708.708L8 5.707l-5.646 5.647a.5.5 0 0 1-.708-.708z" />
             </svg>
         </a>
-    </div>
     <!-- mini button end  -->
 
 
-    <!-- Header end -->
-
-    <div class="flex justify-center bg-transparent absolute bottom-0 top-0 left-0 right-0 items-end">
-        <div class="flex items-center justify-evenly lg:hidden lg:justify-start absolute bg-white dark:bg-dark py-2 px-2 rounded-3xl w-72 shadow-md bottom-0 border-solid border-2 border-slate-500 z-50 opacity-0"
-            id="mini-menu">
-            <!-- about start-->
-            <a href="#about"
-                class="w-9 h-9 rounded-full flex justify-center items-center hover:border-dark hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-file-person fill-current" viewBox="0 0 16 16">
-                    <path
-                        d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
-                    <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
-                </svg>
-            </a>
-            <!--about end  -->
-            <!-- pengalaman start-->
-            <a href="#pengalaman"
-                class="w-9 h-9 rounded-full flex justify-center items-center hover:border-green hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-person fill-current" viewBox="0 0 16 16">
-                    <path
-                        d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
-                </svg>
-            </a>
-            <!--pengalaman end  -->
-            <!-- document start-->
-            <a href="#documentation"
-                class="w-9 h-9 rounded-full flex justify-center items-center hover:border-blue-500 hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                    class="bi bi-files fill-current" viewBox="0 0 16 16">
-                    <path
-                        d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
-                </svg>
-            </a>
-            <div
-                class="w-9 h-9 rounded-full flex justify-center items-center hover:border-blue-500 hover:bg-dark hover:text-white dark:text-white transition duration-300 ease-in-out group">
-                <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive"
-                    viewBox="0 0 16 16">
-                    <path
-                        d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
-                </svg>
-                <div id="dropdownHover"
-                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 group-hover:block absolute bottom-11 ">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="dropdownHoverButton">
+        <!-- button navigation start -->
+    <div class="w-full fixed z-50 bottom-0 flex justify-center">
+        <div class=" bottom-0 left-0 z-50 grid max-w-sm h-14 grid-cols-1 px-8 bg-white rounded-full border-t lg:hidden dark:bg-gray-700 dark:border-gray-600 opacity-0 border-solid border-2 border-slate-500" id="mini-menu">
+            <div class="flex items-center justify-center mx-auto">
+    
+                <a href="#about" data-tooltip-target="tooltip-microphone" type="button" class="p-2.5 group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+                    <svg class="w-4 h-4 text-dark dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" fill="currentColor"
+                        class="bi bi-file-person fill-current" viewBox="0 0 16 16">
+                        <path
+                            d="M12 1a1 1 0 0 1 1 1v10.755S12 11 8 11s-5 1.755-5 1.755V2a1 1 0 0 1 1-1zM4 0a2 2 0 0 0-2 2v12a2 2 0 0 0 2 2h8a2 2 0 0 0 2-2V2a2 2 0 0 0-2-2z" />
+                        <path d="M8 10a3 3 0 1 0 0-6 3 3 0 0 0 0 6" />
+                    </svg>
+                    <span class="sr-only">About</span>
+                </a>
+    
+                <a href="#pengalaman" data-tooltip-target="tooltip-camera" type="button" class="p-2.5 bg-gray-100 group rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+    
+                    <svg class="w-4 h-4 text-dark dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-person fill-current" viewBox="0 0 16 16">
+                        <path
+                            d="M8 8a3 3 0 1 0 0-6 3 3 0 0 0 0 6m2-3a2 2 0 1 1-4 0 2 2 0 0 1 4 0m4 8c0 1-1 1-1 1H3s-1 0-1-1 1-4 6-4 6 3 6 4m-1-.004c-.001-.246-.154-.986-.832-1.664C11.516 10.68 10.289 10 8 10s-3.516.68-4.168 1.332c-.678.678-.83 1.418-.832 1.664z" />
+                    </svg>
+                    <span class="sr-only">Hide camera</span>
+                </a>
+    
+                <a href="#documentation" data-tooltip-target="tooltip-feedback" type="button" class="p-2.5 bg-gray-100 group rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+    
+                    <svg class="w-4 h-4 text-dark dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                        class="bi bi-files fill-current" viewBox="0 0 16 16">
+                        <path
+                            d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
+                    </svg>
+                    <span class="sr-only">Share feedback</span>
+                </a>
+                <button id="moreOptionsDropdownButton" data-dropdown-toggle="moreOptionsDropdown" type="button" class="p-2.5 bg-gray-100 group rounded-full hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+                    <svg class="w-4 h-4 text-dark dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor" class="bi bi-archive"
+                        viewBox="0 0 16 16">
+                        <path
+                            d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                    </svg>
+                    <span class="sr-only">Show options</span>
+                </button>
+                <div id="moreOptionsDropdown" class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200" aria-labelledby="moreOptionsDropdownButton">
                         <li>
-                            <a href="#webDesain"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                                Desain</a>
+                            <a href="#webDesain" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web Desain</a>
                         </li>
                         <li>
-                            <a href="#botTelegram"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bot
+                            <a href="#botTelegram" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bot
                                 Telegram</a>
                         </li>
                         <li>
-                            <a href="#animasi"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Animasi</a>
+                            <a href="#animasi" class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Animasi</a>
                         </li>
                     </ul>
                 </div>
             </div>
         </div>
     </div>
+        <!-- button navigation end -->
+
+
+    <!-- Header end -->
+
 
     <!-- Hero Section Start -->
     <section id="home" class="pt-9 dark:bg-slate-950">
@@ -821,32 +819,68 @@
         </div>
     </section>
 
-    <section id="mySkills" class=" bg-blue-400 lg:flex">
-        <div class="bg-slate-950 pt-10 pb-10 w-full">
+    <section id="mySkills" class=" bg-blue-400 block lg:flex">
+        <div class="p-6 w-full bg-slate-800 text-center grid justify-items-center">
 
-
-            <div
-                class="max-w-sm p-6 bg-white border border-gray-200 rounded-lg shadow dark:bg-gray-800 dark:border-gray-700">
-                <svg class="w-7 h-7 text-gray-500 dark:text-gray-400 mb-3" aria-hidden="true"
-                    xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
-                    <path
-                        d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+            <svg class="w-7 h-7 text-secon mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-code-slash" viewBox="0 0 16 16">
+                <path d="M10.478 1.647a.5.5 0 1 0-.956-.294l-4 13a.5.5 0 0 0 .956.294zM4.854 4.146a.5.5 0 0 1 0 .708L1.707 8l3.147 3.146a.5.5 0 0 1-.708.708l-3.5-3.5a.5.5 0 0 1 0-.708l3.5-3.5a.5.5 0 0 1 .708 0m6.292 0a.5.5 0 0 0 0 .708L14.293 8l-3.147 3.146a.5.5 0 0 0 .708.708l3.5-3.5a.5.5 0 0 0 0-.708l-3.5-3.5a.5.5 0 0 0-.708 0"/>
+            </svg>
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-green">Programmer</h5>
+            </a>
+            <p class="mb-3 font-normal text-slate-400">Saya memulai dalam dunia pemrograman sekitar tahun 2023, yang dimana awalnya saya hanya tertarik menjadi frontend, tapi seiring berjalannya waktu saya juga tertarik untuk menjadi backend kedepannya</p>
+            <a href="#" class="inline-flex items-center text-white hover:underline">
+                See our guideline
+                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
                 </svg>
-                <a href="#">
-                    <h5 class="mb-2 text-2xl font-semibold tracking-tight text-gray-900 dark:text-white">Need a help in
-                        Claim?</h5>
-                </a>
-                <p class="mb-3 font-normal text-gray-500 dark:text-gray-400">Go to this step by step guideline process
-                    on how to certify for your weekly benefits:</p>
-                <a href="#" class="inline-flex items-center text-blue-600 hover:underline">
-                    See our guideline
-                    <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
-                        xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
-                        <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
-                            d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
-                    </svg>
-                </a>
-            </div>
+            </a>
+
+        </div>
+
+        <div class="p-6 w-full bg-slate-900 text-center grid justify-items-center">
+
+            <svg class="w-7 h-7 text-secon mb-3" aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-brush" viewBox="0 0 16 16">
+                <path d="M15.825.12a.5.5 0 0 1 .132.584c-1.53 3.43-4.743 8.17-7.095 10.64a6.1 6.1 0 0 1-2.373 1.534c-.018.227-.06.538-.16.868-.201.659-.667 1.479-1.708 1.74a8.1 8.1 0 0 1-3.078.132 4 4 0 0 1-.562-.135 1.4 1.4 0 0 1-.466-.247.7.7 0 0 1-.204-.288.62.62 0 0 1 .004-.443c.095-.245.316-.38.461-.452.394-.197.625-.453.867-.826.095-.144.184-.297.287-.472l.117-.198c.151-.255.326-.54.546-.848.528-.739 1.201-.925 1.746-.896q.19.012.348.048c.062-.172.142-.38.238-.608.261-.619.658-1.419 1.187-2.069 2.176-2.67 6.18-6.206 9.117-8.104a.5.5 0 0 1 .596.04M4.705 11.912a1.2 1.2 0 0 0-.419-.1c-.246-.013-.573.05-.879.479-.197.275-.355.532-.5.777l-.105.177c-.106.181-.213.362-.32.528a3.4 3.4 0 0 1-.76.861c.69.112 1.736.111 2.657-.12.559-.139.843-.569.993-1.06a3 3 0 0 0 .126-.75zm1.44.026c.12-.04.277-.1.458-.183a5.1 5.1 0 0 0 1.535-1.1c1.9-1.996 4.412-5.57 6.052-8.631-2.59 1.927-5.566 4.66-7.302 6.792-.442.543-.795 1.243-1.042 1.826-.121.288-.214.54-.275.72v.001l.575.575zm-4.973 3.04.007-.005zm3.582-3.043.002.001h-.002z"/>
+              </svg>
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-green">Artist</h5>
+            </a>
+            <p class="mb-3 font-normal text-slate-400 dark:text-gray-400">Saya memulai artist ini pada tahun 2018, awalnya cuma bisa style tradisional tapi sekarang sudah mulai ke style digital</p>
+            <a href="#" class="inline-flex items-center text-white hover:underline">
+                See our guideline
+                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                </svg>
+            </a>
+
+        </div>
+
+        <div class="p-6 w-full bg-slate-800 text-center grid justify-items-center">
+
+            <svg class="w-7 h-7 text-secon mb-3" aria-hidden="true"
+                xmlns="http://www.w3.org/2000/svg" fill="currentColor" viewBox="0 0 20 20">
+                <path
+                    d="M18 5h-.7c.229-.467.349-.98.351-1.5a3.5 3.5 0 0 0-3.5-3.5c-1.717 0-3.215 1.2-4.331 2.481C8.4.842 6.949 0 5.5 0A3.5 3.5 0 0 0 2 3.5c.003.52.123 1.033.351 1.5H2a2 2 0 0 0-2 2v3a1 1 0 0 0 1 1h18a1 1 0 0 0 1-1V7a2 2 0 0 0-2-2ZM8.058 5H5.5a1.5 1.5 0 0 1 0-3c.9 0 2 .754 3.092 2.122-.219.337-.392.635-.534.878Zm6.1 0h-3.742c.933-1.368 2.371-3 3.739-3a1.5 1.5 0 0 1 0 3h.003ZM11 13H9v7h2v-7Zm-4 0H2v5a2 2 0 0 0 2 2h3v-7Zm6 0v7h3a2 2 0 0 0 2-2v-5h-5Z" />
+            </svg>
+            
+            
+            <a href="#">
+                <h5 class="mb-2 text-2xl font-semibold tracking-tight text-green">Animation</h5>
+            </a>
+            <p class="mb-3 font-normal text-slate-400 dark:text-gray-400">Awal mula saya mengikuti ini di tahun 2020, saya terinspirasi dari kakak kelas yang dimana mereka bisa membuat animasi yang unik, sebab itulah saya ingin mempelajarinya juga untuk keperluan Game Developer</p>
+            <a href="#" class="inline-flex items-center text-white hover:underline">
+                See our guideline
+                <svg class="w-3 h-3 ms-2.5 rtl:rotate-[270deg]" aria-hidden="true"
+                    xmlns="http://www.w3.org/2000/svg" fill="none" viewBox="0 0 18 18">
+                    <path stroke="currentColor" stroke-linecap="round" stroke-linejoin="round" stroke-width="2"
+                        d="M15 11v4.833A1.166 1.166 0 0 1 13.833 17H2.167A1.167 1.167 0 0 1 1 15.833V4.167A1.166 1.166 0 0 1 2.167 3h4.618m4.447-2H17v5.768M9.111 8.889l7.778-7.778" />
+                </svg>
+            </a>
 
         </div>
     </section>
