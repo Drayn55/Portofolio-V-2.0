@@ -4,7 +4,6 @@ const navMenu = document.querySelector('#nav-menu');
 hamburger.addEventListener('click', function () {
     hamburger.classList.toggle('hamburger-active');
     navMenu.classList.toggle('hidden');
-    // alert('oke');
 });
 
 
@@ -23,7 +22,6 @@ window.onscroll = function () {
         miniMenu.classList.remove('mini-menu');
         tombolmini.classList.remove('mini-tombol');
     }
-    // myFunction()
 };
 
 
@@ -38,7 +36,7 @@ next.addEventListener('click', function () {
 
 prev.addEventListener('click', function () {
     let items = document.querySelectorAll('.item')
-    document.querySelector('.slide').prepend(items[items.length - 1]) // here the length of items = 6
+    document.querySelector('.slide').prepend(items[items.length - 1]) 
 })
 
 
@@ -66,4 +64,41 @@ darkToggle.addEventListener('change', function () {
         sessionStorage.setItem('darkMode', 'false');
     }
 });
+
+
+// slider web desaign
+document.addEventListener('DOMContentLoaded', function () {
+    const carousel = document.getElementById('gallery');
+    const prevButton = carousel.querySelector('[data-carousel-prev]');
+    const nextButton = carousel.querySelector('[data-carousel-next]');
+    const items = carousel.querySelectorAll('[data-carousel-item]');
+    let currentIndex = 0;
+
+    // Fungsi untuk menampilkan item yang sesuai dengan indeks saat ini
+    function showItem(index) {
+        items.forEach((item, i) => {
+            item.classList.toggle('hidden', i !== index);
+        });
+    }
+
+    // Fungsi untuk menangani klik tombol sebelumnya
+    function prevSlide() {
+        currentIndex = (currentIndex - 1 + items.length) % items.length;
+        showItem(currentIndex);
+    }
+
+    // Fungsi untuk menangani klik tombol berikutnya
+    function nextSlide() {
+        currentIndex = (currentIndex + 1) % items.length;
+        showItem(currentIndex);
+    }
+
+    // Tambahkan event listener untuk tombol sebelumnya dan berikutnya
+    prevButton.addEventListener('click', prevSlide);
+    nextButton.addEventListener('click', nextSlide);
+
+    // Tampilkan item pertama saat halaman dimuat
+    showItem(currentIndex);
+});
+
 

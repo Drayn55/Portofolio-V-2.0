@@ -1,6 +1,8 @@
 /** @type {import('tailwindcss').Config} */
 module.exports = {
-  content: ['index.html'],
+  content: ['index.html',
+    "./src/**/*.{html,js}",
+    "./node_modules/tw-elements/dist/js/**/*.js"],
   darkMode: 'class',
   theme: {
     container: {
@@ -76,5 +78,12 @@ module.exports = {
 
     },
   },
-  plugins: [],
+  plugins: [
+    //  require('@tailwindcss/forms'),      
+    //  require('preline/plugin'),
+
+    require("tw-elements/dist/plugin.cjs")
+  ],
+  darkMode: "class"
+
 }

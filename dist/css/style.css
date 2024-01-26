@@ -1,3 +1,12 @@
+/* container ~~ px-4 */
+.containerV2 {
+    width: 100%;
+    margin-right: auto;
+    margin-left: auto;
+    padding-right: px;
+    padding-left: 16px;
+}
+
 .content-slider{
     position: absolute;
     top: 50%;
@@ -220,6 +229,14 @@
     animation: progress 0.4s ease-in-out forwards;
     animation-delay: 0.5s;
   }
+  .skill-per.ibis {
+    animation: progress 0.4s ease-in-out forwards;
+    animation-delay: 0.6s;
+  }
+  .skill-per.blend {
+    animation: progress 0.4s ease-in-out forwards;
+    animation-delay: 0.7s;
+  }
   
   @keyframes progress {
     0% {
@@ -275,7 +292,7 @@
   }
   
   .title {
-    font-size: 1em;
+    font-size: 0.8em;
     letter-spacing: .1em;
     font-weight: 900;
     text-transform: uppercase;
