@@ -22,9 +22,9 @@
     <title>About Me</title>
 </head>
 
-<body class="dark:bg-slate-950 overflow-x-hidden ">
+<body class="dark:bg-slate-950 overflow-x-hidden">
 
-
+<section class="w-screen overflow-x-hidden relative overflow-y-hidden">
     <!-- Header Start -->
     <header class="bg-transparent top-0 left-0 w-full flex items-center z-10 relative">
         <div class="px-4 w-full mr-auto ml-auto flex justify-center">
@@ -171,7 +171,7 @@
 
     <!-- mini button start -->
     <a href="#home"
-        class="w-11 fixed bottom-12 right-5 h-11 opacity-0 rounded-full flex bg-slate-100 shadow-lg ring-1 z-50 animate-bounce ring-success-500 justify-center items-center hover:border-dark hover:bg-dark text-dark hover:text-white dark:bg-success-500 transition duration-300 ease-in-out"
+        class="w-11 fixed bottom-16 right-5 h-11 opacity-0 rounded-full flex bg-slate-100 shadow-lg ring-1 z-50 animate-bounce ring-success-500 justify-center items-center hover:border-dark hover:bg-dark text-dark hover:text-white dark:bg-success-500 transition duration-300 ease-in-out"
         id="tombol-mini">
         <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
             class="bi bi-chevron-up fill-current" viewBox="0 0 16 16">
@@ -184,9 +184,9 @@
 
     <!-- button navigation start -->
     <div class="w-full fixed z-50 bottom-0 flex justify-center">
-        <div class=" bottom-0 left-0 z-50 grid max-w-sm h-14 grid-cols-1 px-8 bg-white rounded-full border-t lg:hidden dark:bg-gray-700 dark:border-gray-600 opacity-0 border-solid border-2 border-slate-500"
+        <div class=" bottom-0 left-0 z-50 grid max-w-sm h-14 grid-cols-1 px-8 bg-white rounded-full border-t lg:hidden dark:bg-gray-700 dark:border-gray-600 opacity-0 border-solid border-2 border-slate-500 w-full"
             id="mini-menu">
-            <div class="flex items-center justify-center mx-auto">
+            <div class="grid grid-cols-5 items-center justify-center mx-auto">
 
                 <a href="#about" data-tooltip-target="tooltip-microphone" type="button"
                     class="p-2.5 group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
@@ -221,8 +221,7 @@
                             d="M13 0H6a2 2 0 0 0-2 2 2 2 0 0 0-2 2v10a2 2 0 0 0 2 2h7a2 2 0 0 0 2-2 2 2 0 0 0 2-2V2a2 2 0 0 0-2-2m0 13V4a2 2 0 0 0-2-2H5a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1M3 4a1 1 0 0 1 1-1h7a1 1 0 0 1 1 1v10a1 1 0 0 1-1 1H4a1 1 0 0 1-1-1z" />
                     </svg>
                 </a>
-                <div
-                    class="group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+                <div class="group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
                     <button id="moreOptionsDropdownButton" data-dropdown-toggle="moreOptionsDropdown1" type="button"
                         class="p-2.5 bg-gray-100 group rounded-full hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
                         <svg xmlns="http://www.w3.org/2000/svg"
@@ -260,45 +259,46 @@
 
                 </div>
 
-                <button id="moreOptionsDropdownButton" data-dropdown-toggle="moreOptionsDropdown2" type="button"
-                    class="p-2.5 bg-gray-100 group rounded-full hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
-                    <svg class="w-4 h-4 text-dark dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
-                        aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
-                        class="bi bi-archive" viewBox="0 0 16 16">
-                        <path
-                            d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
-                    </svg>
-
-                    <span class="sr-only">Show options</span>
-                </button>
-                <div id="moreOptionsDropdown2"
-                    class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
-                    <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
-                        aria-labelledby="moreOptionsDropdownButton">
-                        <li>
-                            <a href="#webDesain"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
-                                Desain</a>
-                        </li>
-                        <li>
-                            <a href="#botTelegram"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bot
-                                Telegram</a>
-                        </li>
-                        <li>
-                            <a href="#animasi"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Animasi</a>
-                        </li>
-                        <li>
-                            <a href="#Artist"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Artist</a>
-                        </li>
-                        <li>
-                            <a href="#3dmodels"
-                                class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">3D
-                                Models</a>
-                        </li>
-                    </ul>
+                <div class="group bg-gray-100 rounded-full hover:bg-gray-200 me-4 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+                    <button id="moreOptionsDropdownButton" data-dropdown-toggle="moreOptionsDropdown2" type="button"
+                        class="p-2.5 bg-gray-100 group rounded-full hover:bg-gray-200 focus:outline-none focus:ring-4 focus:ring-gray-200 dark:focus:ring-gray-800 dark:bg-gray-600 dark:hover:bg-gray-800">
+                        <svg class="w-4 h-4 text-dark dark:text-gray-300 group-hover:text-gray-900 dark:group-hover:text-white"
+                            aria-hidden="true" xmlns="http://www.w3.org/2000/svg" width="20" height="20" fill="currentColor"
+                            class="bi bi-archive" viewBox="0 0 16 16">
+                            <path
+                                d="M0 2a1 1 0 0 1 1-1h14a1 1 0 0 1 1 1v2a1 1 0 0 1-1 1v7.5a2.5 2.5 0 0 1-2.5 2.5h-9A2.5 2.5 0 0 1 1 12.5V5a1 1 0 0 1-1-1zm2 3v7.5A1.5 1.5 0 0 0 3.5 14h9a1.5 1.5 0 0 0 1.5-1.5V5zm13-3H1v2h14zM5 7.5a.5.5 0 0 1 .5-.5h5a.5.5 0 0 1 0 1h-5a.5.5 0 0 1-.5-.5" />
+                        </svg>
+    
+                    </button>
+                    <div id="moreOptionsDropdown2"
+                        class="z-10 hidden bg-white divide-y divide-gray-100 rounded-lg shadow w-44 dark:bg-gray-700 dark:divide-gray-600">
+                        <ul class="py-2 text-sm text-gray-700 dark:text-gray-200"
+                            aria-labelledby="moreOptionsDropdownButton">
+                            <li>
+                                <a href="#webDesain"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Web
+                                    Desain</a>
+                            </li>
+                            <li>
+                                <a href="#botTelegram"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Bot
+                                    Telegram</a>
+                            </li>
+                            <li>
+                                <a href="#animasi"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Animasi</a>
+                            </li>
+                            <li>
+                                <a href="#Artist"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">Artist</a>
+                            </li>
+                            <li>
+                                <a href="#3dmodels"
+                                    class="block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-600 dark:hover:text-white">3D
+                                    Models</a>
+                            </li>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
@@ -325,7 +325,7 @@
                         siapa yang bersungguh-sungguh makan dia akan
                         mendapatkannya :]</p>
                     <a href="#footer"
-                        class="text-base w-40 font-semibold text-white bg-green py-3 px-8 rounded-full hover:shadow-lg hover:opacity-35 transition duration-300 ease-in-out animate-slideLeft block z-[1000] relative">Contact
+                        class="text-base w-40 font-semibold text-white bg-green py-3 px-8 rounded-full hover:shadow-lg hover:opacity-35 transition duration-300 ease-in-out animate-slideLeft block z-[10] relative">Contact
                         Me</a>
                 </div>
 
@@ -353,10 +353,10 @@
         <div class="ps-4">
             <div class="flex flex-wrap">
                 <div class="w-full px-4 mb-10 lg:w-1/2">
-                    <h4 class="font-bold uppercase text-green text-lg mb-3 animate-slideBottom">About Me</h4>
-                    <h2 class="font-bold text-dark text-3xl mb-5 lg:text-4xl animate-slideRigth dark:text-slate-400">
+                    <h4 class="font-bold uppercase text-green text-lg mb-3 animate-slideBottom text-center lg:text-left">About Me</h4>
+                    <h2 class="font-bold text-dark text-3xl mb-5 lg:text-4xl animate-slideRigth dark:text-slate-400 text-center lg:text-left">
                         Pintu Menuju Karya Brilian</h2>
-                    <p class="font-medium text-base text-secon max-w-xl lg:text-lg animate-slideTop">Saya Drayn, jadi di
+                    <p class="font-medium text-base text-secon max-w-xl lg:text-lg animate-slideTop text-center lg:text-left">Saya Drayn, jadi di
                         page ini saya
                         ingin
                         mempresentasikan
@@ -366,17 +366,18 @@
                 </div>
                 <div class="w-full px-4 lg:w-1/2">
                     <h3
-                        class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 animate-slideBottom dark:text-slate-400">
+                        class="font-semibold text-dark text-2xl mb-4 lg:text-3xl lg:pt-10 animate-slideBottom dark:text-slate-400 text-center lg:text-left">
                         Tersedia Untuk Menginspirasi & Berkolaborasi <p>Bersama Anda!! (^///^)</p>
                     </h3>
-                    <p class="font-medium text-base text-secon mb-6 lg:text-lg animate-slideRigth">Jika pembaca ada
+                    <p class="font-medium text-base text-secon mb-6 lg:text-lg animate-slideRigth text-center lg:text-left">Jika pembaca ada
                         tertarik dengan talenta
                         yang
                         saya punya atau ingin bekerja sama dengan saya,
                         saya sangat tidak keberatan dengan hal itu, bisa menghubungi saya di sosial media saya di
                         bawah
                         sini..</p>
-                    <div class="flex items-center animate-slideTop">
+                    <div class="w-full flex flex-wrap justify-center lg:justify-start">
+                        <div class="flex items-center animate-slideTop">
                         <!-- whatsapp start-->
                         <a href="https://wa.me/+6285835284695" target="_blank"
                             class="w-9 h-9 mr-3 rounded-full flex justify-center items-center border border-slate-500 hover:border-green hover:bg-green hover:text-white transition duration-300 ease-in-out dark:text-slate-400">
@@ -426,6 +427,7 @@
                         </a>
                         <!--GitHub end  -->
 
+                        </div>
                     </div>
                 </div>
             </div>
@@ -1128,7 +1130,6 @@
 
 
     <!-- Project Web Desain start-->
-
     <section id="webDesain" class="pt-14 pb-10 bg-slate-100 dark:bg-slate-800">
         <div class="px-4 block lg:flex flex-wrap lg:relative">
 
@@ -1155,10 +1156,10 @@
                 <div class="rounded-md shadow-md overflow-hidden" data-aos="fade-left">
                     <img src="dist/img/Screenshot (460).png" alt="" width="100%">
                 </div>
-                <h3 class="font-semibold text-green text-xl mt-10 mb-8" data-aos="zoom-in">Aplikasi Yang Bertugas Untuk
+                <h3 class="font-semibold text-green text-xl mt-10 mb-8 text-center lg:text-left" data-aos="zoom-in">Aplikasi Yang Bertugas Untuk
                     Mengolah Database
                     Suatu Perusahaan</h3>
-                <p class="font-medium text-base text-secon dark:text-slate-400" data-aos="zoom-in">Saat saya PKL di
+                <p class="font-medium text-base text-secon dark:text-slate-400 text-center lg:text-left" data-aos="zoom-in">Saat saya PKL di
                     perusahaan PT. Telkom,
                     saya berkesempatan
                     dalam pembuatan aplikasi ini, dengan tujuan untuk memberikan keamanan pada data client dan juga
@@ -1564,7 +1565,7 @@
                             </a>
                             <a class="w-1/2 p-1 md:p-2 cursor-pointer" href="#" data-aos="zoom-in" data-aos-delay="100">
                                 <div class="aspect-w-12 aspect-h-7 sm:aspect-none rounded-xl overflow-hidden group">
-                                    <img alt="Style 1"
+                                    <img alt="Style 2"
                                         class="group-hover:scale-110 transition-transform duration-200 ease-in-out rounded-xl object-cover cursor-pointer"
                                         src="dist/img/mata-2.jpg" />
                                 </div>
@@ -1700,8 +1701,8 @@
 
 
     <!-- My Mentor start -->
-    <section class="containerV2 mx-auto md:px5 bg-slate-200 dark:bg-slate-800" id="mymentor">
-        <div class="text-center pt-10 lg:pb-10">
+    <section class="mx-auto md:px5 bg-slate-200 dark:bg-slate-800" id="mymentor">
+        <div class="containerV2 text-center pt-10 lg:pb-10 md:pb-10">
             <h2 class="mb-32 text-3xl font-bold dark:text-white" data-aos="zoom-in">
                 My<u class="text-green"> Mentor</u>
             </h2>
@@ -1932,7 +1933,6 @@
 
 
     <!-- Project footer start-->
-
     <footer class="flex flex-col items-center bg-dark text-center text-white" id="footer">
         <div class="container pt-6">
             <!-- Social media icons container -->
@@ -2014,16 +2014,16 @@
 
             <!-- Copyright information -->
             <div class="mb-6" data-aos="zoom-in">
-                <p>
+                <span>
                     Terima Kasih telah Meluangkan Waktu Untuk Mengenal Kami!
                 <p>Tentang Dunia Kreatifitas Kami</p> & Terima Kasih Juga Atas Kunjungan Anda! Marilah Kita
                 Berkolaborasi Bersama😊!
-                </p>
+                </span>
             </div>
 
             <!-- Links section -->
             <div class="mx-6 py-10 text-center md:text-left">
-                <div class="grid-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
+                <div class="grid-1 grid-cols-1 grid gap-8 md:grid-cols-2 lg:grid-cols-4">
                     <!-- portofolio section -->
                     <div class="" data-aos="fade-right">
                         <h6 class="mb-4 flex items-center justify-center font-semibold uppercase md:justify-start">
@@ -2119,16 +2119,16 @@
             <a class="text-white" href="#home">Portofolio Drayn</a>
         </div>
     </footer>
-
     <!-- Project footer end-->
-
+    
+</section>
 
     <script src="https://unpkg.com/flowbite@1.4.0/dist/flowbite.js"></script>
     <script src="dist/js/script.js"></script>
 
 
     <!-- framework TW Element -->
-    <script type="text/javascript" src="../node_modules/tw-elements/dist/js/tw-elements.umd.min.js"></script>
+    <script type="text/javascript" src="dist/js/tw-elements.umd.min.js"></script>
 
     <!-- AOS framework -->
     <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
