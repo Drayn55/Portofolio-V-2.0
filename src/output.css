@@ -815,6 +815,10 @@ input[type="range"]:active::-webkit-slider-thumb{
   bottom: 4rem;
 }
 
+.bottom-32{
+  bottom: 8rem;
+}
+
 .bottom-5{
   bottom: 1.25rem;
 }
@@ -925,18 +929,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .top-full{
   top: 100%;
-}
-
-.bottom-20{
-  bottom: 5rem;
-}
-
-.bottom-28{
-  bottom: 7rem;
-}
-
-.bottom-32{
-  bottom: 8rem;
 }
 
 .\!z-40{
@@ -2217,6 +2209,17 @@ input[type="range"]:active::-webkit-slider-thumb{
   animation: opacity 1s ease forwards;
 }
 
+@keyframes ping{
+  75%, 100%{
+    transform: scale(2);
+    opacity: 0;
+  }
+}
+
+.animate-ping{
+  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
+}
+
 @keyframes slideBottom{
   0%{
     transform: translateY(-100px);
@@ -2291,17 +2294,6 @@ input[type="range"]:active::-webkit-slider-thumb{
   animation: spin 1s linear infinite;
 }
 
-@keyframes ping{
-  75%, 100%{
-    transform: scale(2);
-    opacity: 0;
-  }
-}
-
-.animate-ping{
-  animation: ping 1s cubic-bezier(0, 0, 0.2, 1) infinite;
-}
-
 .cursor-default{
   cursor: default;
 }
@@ -2367,10 +2359,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .grid-cols-5{
   grid-template-columns: repeat(5, minmax(0, 1fr));
-}
-
-.grid-cols-6{
-  grid-template-columns: repeat(6, minmax(0, 1fr));
 }
 
 .\!flex-row{
@@ -2598,14 +2586,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .rounded-xl{
   border-radius: 0.75rem;
-}
-
-.rounded-2xl{
-  border-radius: 1rem;
-}
-
-.rounded-3xl{
-  border-radius: 1.5rem;
 }
 
 .rounded-b-lg{
@@ -3979,6 +3959,10 @@ input[type="range"]:active::-webkit-slider-thumb{
   opacity: 1;
 }
 
+.opacity-20{
+  opacity: 0.2;
+}
+
 .opacity-50{
   opacity: 0.5;
 }
@@ -3989,18 +3973,6 @@ input[type="range"]:active::-webkit-slider-thumb{
 
 .opacity-\[\.54\]{
   opacity: .54;
-}
-
-.opacity-40{
-  opacity: 0.4;
-}
-
-.opacity-15{
-  opacity: 0.15;
-}
-
-.opacity-20{
-  opacity: 0.2;
 }
 
 .shadow{
@@ -4624,8 +4596,20 @@ body {
   height: 20rem;
 }
 
-.hover\:h-\[330px\]:hover{
-  height: 330px;
+.hover\:h-\[340px\]:hover{
+  height: 340px;
+}
+
+.hover\:h-\[300px\]:hover{
+  height: 300px;
+}
+
+.hover\:h-\[320px\]:hover{
+  height: 320px;
+}
+
+.hover\:h-\[310px\]:hover{
+  height: 310px;
 }
 
 .hover\:cursor-pointer:hover{
@@ -6021,12 +6005,12 @@ body {
     bottom: 4rem;
   }
 
-  .lg\:right-0{
-    right: 0px;
-  }
-
   .lg\:bottom-36{
     bottom: 9rem;
+  }
+
+  .lg\:right-0{
+    right: 0px;
   }
 
   .lg\:col-span-3{
