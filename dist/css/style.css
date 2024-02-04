@@ -287,12 +287,12 @@
     margin-bottom: 16px;
   }
   
-  .card-skills .header .img-box {
+  /* .card-skills .header .img-box {
     width: 50px;
-  }
+  } */
   
   .title {
-    font-size: 0.8em;
+    font-size: 0.6em;
     letter-spacing: .1em;
     font-weight: 900;
     text-transform: uppercase;
